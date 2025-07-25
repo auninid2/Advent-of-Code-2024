@@ -21,8 +21,10 @@ with open("input.txt", "r") as file:
 list1.sort()
 list2.sort()
 
+# --- Part One ----
 total_distance = sum(abs(a - b) for a, b in zip(list1, list2))
 
+# --- Part Two ---
 counter = Counter(list2)
 similarity_score = sum(counter[x] * x for x in list1)
 
