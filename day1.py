@@ -22,11 +22,12 @@ list1.sort()
 list2.sort()
 
 # --- Part One ----
+
 total_distance = sum(abs(a - b) for a, b in zip(list1, list2))
+print("Total distance between both lists:", total_distance)
 
 # --- Part Two ---
+
 counter = Counter(list2)
 similarity_score = sum(counter[x] * x for x in list1)
-
-print("Total distance between both lists:", total_distance)
 print("Similarity score beetwen both lists:", similarity_score)
