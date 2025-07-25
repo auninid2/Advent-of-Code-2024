@@ -2,8 +2,6 @@
 # --- Day 2: Red-Nosed Reports ----
 # ---------------------------------
 
-# --- Part One----
-
 from itertools import pairwise
 
 def is_safe(digits):
@@ -18,6 +16,8 @@ list1 = []
 with open("inputs/day2_input.txt", "r") as file:
     for line in file:
         list1.append(line.strip())
+
+# --- Part One ---
 
 safe_reports = 0
 
